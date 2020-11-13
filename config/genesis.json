@@ -1,0 +1,502 @@
+{
+  "genesis_time": "2020-11-13T07:45:52.334959Z",
+  "chain_id": "dip-prinet-sky",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1",
+      "time_iota_ms": "1000"
+    },
+    "evidence": {
+      "max_age": "100000"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    }
+  },
+  "app_hash": "",
+  "app_state": {
+    "accounts": [
+      {
+        "address": "dip175zg57expcqmutjal92zgds4tkhull3s9unqa8",
+        "coins": [
+          {
+            "denom": "pdip",
+            "amount": "1000000000000000000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ],
+        "code_hash": null
+      }
+    ],
+    "auth": {
+      "params": {
+        "gas_price_threshold": "6000000",
+        "max_memo_characters": "256",
+        "tx_sig_limit": "10",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "dip/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "dip/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "dip-sky",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "dip175zg57expcqmutjal92zgds4tkhull3s9unqa8",
+                  "validator_address": "dipvaloper175zg57expcqmutjal92zgds4tkhull3s8sm9ed",
+                  "pubkey": "dipvalconspub1zcjduepqu2sjncpr86pxxlvlc7kprvzdx6t4vyveld9nsu6yjz8ut96aaevqdzuk2c",
+                  "value": {
+                    "denom": "pdip",
+                    "amount": "10000000000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AtfWuw6f0RNhiJJXbcV5/FVXEuGLTkzpSBG8qpPkAmot"
+                },
+                "signature": "MDn7+F064RGFVybAAjkDX39l/NFrYKFCYIZttkS15DkuL42TXJH8eho8/k1jScN6w+PM7s4vDcrwtLLfIQYJBw=="
+              }
+            ],
+            "memo": "bfb8b4876bee7f1a4a7add1312d4cf55c8e7e26b@192.168.0.106:26656"
+          }
+        }
+      ]
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "guardian": {
+      "profilers": [
+        {
+          "description": "genesis",
+          "type": "Genesis",
+          "address": "",
+          "added_by": ""
+        }
+      ]
+    },
+    "staking": {
+      "params": {
+        "next_extending_time": "2021-11-13T13:45:52.334648Z",
+        "bond_denom": "pdip",
+        "unbonding_time": "1209600000000000",
+        "max_lever": "20.000000000000000000",
+        "max_validators": 100,
+        "max_validators_extending_limit": 300,
+        "max_validators_extending_speed": 10,
+        "max_entries": 7
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "supply": {
+      "supply": []
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "vm": {
+      "params": {
+        "max_code_size": "1048576",
+        "max_call_create_depth": "1024",
+        "vm_op_gas_params": [
+          "0",
+          "3",
+          "5",
+          "3",
+          "5",
+          "5",
+          "5",
+          "5",
+          "8",
+          "8",
+          "0",
+          "5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "0",
+          "0",
+          "30",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2",
+          "700",
+          "2",
+          "2",
+          "2",
+          "3",
+          "2",
+          "3",
+          "2",
+          "3",
+          "2",
+          "700",
+          "700",
+          "2",
+          "3",
+          "700",
+          "20",
+          "2",
+          "2",
+          "2",
+          "0",
+          "2",
+          "2",
+          "5",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2",
+          "3",
+          "3",
+          "3",
+          "800",
+          "0",
+          "8",
+          "10",
+          "2",
+          "2",
+          "2",
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "32000",
+          "700",
+          "700",
+          "0",
+          "700",
+          "32000",
+          "0",
+          "0",
+          "0",
+          "0",
+          "700",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "vm_contract_creation_gas_params": {
+          "gas": "53000",
+          "gas_per_byte": "200"
+        }
+      },
+      "storage": [],
+      "codes": {},
+      "vm_logs": {
+        "logs": {},
+        "log_index": "0"
+      }
+    },
+    "upgrade": {
+      "genesis_version": {
+        "upgrade_info": {
+          "proposal_id": 0,
+          "protocol": {
+            "version": 0,
+            "software": "https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/vmainnet-v1.0.0",
+            "height": 1,
+            "threshold": "0.900000000000000000"
+          }
+        },
+        "success": true
+      }
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.040000000000000000",
+        "annual_provisions": "0.000000000000000000",
+        "current_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "pdip",
+        "inflation_rate_change": "0.060000000000000000",
+        "inflation_max": "0.100000000000000000",
+        "inflation_min": "0.040000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520",
+        "max_provisions": "350000000000000000000.000000000000000000"
+      }
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "86400000000000",
+        "signed_blocks_window": "34560",
+        "min_signed_per_window": "0.700000000000000000",
+        "downtime_jail_duration": "129600000000000",
+        "slash_fraction_double_sign": "0.010000000000000000",
+        "slash_fraction_downtime": "0.000300000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "pdip",
+        "amount": "1000"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "pdip",
+            "amount": "2000000000000000"
+          }
+        ],
+        "max_deposit_period": "86400000000000"
+      },
+      "voting_params": {
+        "voting_period": "432000000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "params": null
+  }
+}
