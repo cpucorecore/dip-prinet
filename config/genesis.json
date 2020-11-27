@@ -1,6 +1,6 @@
 {
-  "genesis_time": "2020-11-13T07:45:52.334959Z",
-  "chain_id": "dip-prinet-sky",
+  "genesis_time": "2020-11-27T21:33:40.218957Z",
+  "chain_id": "dipperhub1",
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
@@ -18,9 +18,153 @@
   },
   "app_hash": "",
   "app_state": {
+    "crisis": {
+      "constant_fee": {
+        "denom": "pdip",
+        "amount": "1000"
+      }
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "auth": {
+      "params": {
+        "gas_price_threshold": "6000000",
+        "max_memo_characters": "256",
+        "tx_sig_limit": "10",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "pdip",
+            "amount": "2000000000000000"
+          }
+        ],
+        "max_deposit_period": "86400000000000"
+      },
+      "voting_params": {
+        "voting_period": "432000000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "params": null,
+    "mint": {
+      "minter": {
+        "inflation": "0.040000000000000000",
+        "annual_provisions": "0.000000000000000000",
+        "current_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "pdip",
+        "inflation_rate_change": "0.060000000000000000",
+        "inflation_max": "0.100000000000000000",
+        "inflation_min": "0.040000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520",
+        "max_provisions": "350000000000000000000.000000000000000000"
+      }
+    },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "86400000000000",
+        "signed_blocks_window": "34560",
+        "min_signed_per_window": "0.700000000000000000",
+        "downtime_jail_duration": "129600000000000",
+        "slash_fraction_double_sign": "0.010000000000000000",
+        "slash_fraction_downtime": "0.000300000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "dip/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "dip/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "sky",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.100000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "dip1zdfmrnhqq7c7fqcqplg4luapvt00ffzq63vgc6",
+                  "validator_address": "dipvaloper1zdfmrnhqq7c7fqcqplg4luapvt00ffzqcaydus",
+                  "pubkey": "dipvalconspub1zcjduepqe8a6gf4ujgyw0zrkqkkejzn3aazlvhet9gp3p3rf3c45mczytwksrzhk4r",
+                  "value": {
+                    "denom": "pdip",
+                    "amount": "100000000000000000"
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AlqHxQzQeWro+4zBcac5xy/ludyZyx/TTeS/ATKtKQ5G"
+                },
+                "signature": "WH6igRKpmKBv+4eqkz5zbU2+563Kuon4WH0EikvywKAR6GOHIN8kE8EcGLupDsQd+1WuoivxFCxHMbEw6m0Oqw=="
+              }
+            ],
+            "memo": "3c1574b8765128935bd37262af4cbf024e47785d@10.0.0.12:26656"
+          }
+        }
+      ]
+    },
+    "guardian": {
+      "profilers": [
+        {
+          "description": "genesis",
+          "type": "Genesis",
+          "address": "",
+          "added_by": ""
+        }
+      ]
+    },
     "accounts": [
       {
-        "address": "dip175zg57expcqmutjal92zgds4tkhull3s9unqa8",
+        "address": "dip1zdfmrnhqq7c7fqcqplg4luapvt00ffzq63vgc6",
         "coins": [
           {
             "denom": "pdip",
@@ -41,81 +185,9 @@
         "code_hash": null
       }
     ],
-    "auth": {
-      "params": {
-        "gas_price_threshold": "6000000",
-        "max_memo_characters": "256",
-        "tx_sig_limit": "10",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
-      }
-    },
-    "genutil": {
-      "gentxs": [
-        {
-          "type": "dip/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "dip/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "dip-sky",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.100000000000000000",
-                    "max_rate": "0.200000000000000000",
-                    "max_change_rate": "0.100000000000000000"
-                  },
-                  "min_self_delegation": "1",
-                  "delegator_address": "dip175zg57expcqmutjal92zgds4tkhull3s9unqa8",
-                  "validator_address": "dipvaloper175zg57expcqmutjal92zgds4tkhull3s8sm9ed",
-                  "pubkey": "dipvalconspub1zcjduepqu2sjncpr86pxxlvlc7kprvzdx6t4vyveld9nsu6yjz8ut96aaevqdzuk2c",
-                  "value": {
-                    "denom": "pdip",
-                    "amount": "10000000000000000000"
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "200000"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "AtfWuw6f0RNhiJJXbcV5/FVXEuGLTkzpSBG8qpPkAmot"
-                },
-                "signature": "MDn7+F064RGFVybAAjkDX39l/NFrYKFCYIZttkS15DkuL42TXJH8eho8/k1jScN6w+PM7s4vDcrwtLLfIQYJBw=="
-              }
-            ],
-            "memo": "bfb8b4876bee7f1a4a7add1312d4cf55c8e7e26b@192.168.0.106:26656"
-          }
-        }
-      ]
-    },
-    "bank": {
-      "send_enabled": true
-    },
-    "guardian": {
-      "profilers": [
-        {
-          "description": "genesis",
-          "type": "Genesis",
-          "address": "",
-          "added_by": ""
-        }
-      ]
-    },
     "staking": {
       "params": {
-        "next_extending_time": "2021-11-13T13:45:52.334648Z",
+        "next_extending_time": "2021-11-28T03:33:40.21852Z",
         "bond_denom": "pdip",
         "unbonding_time": "1209600000000000",
         "max_lever": "20.000000000000000000",
@@ -132,25 +204,25 @@
       "redelegations": null,
       "exported": false
     },
+    "upgrade": {
+      "genesis_version": {
+        "upgrade_info": {
+          "proposal_id": 0,
+          "protocol": {
+            "version": 0,
+            "software": "https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/vmainnet-v1.0.1",
+            "height": 1,
+            "threshold": "0.900000000000000000"
+          }
+        },
+        "success": true
+      }
+    },
     "supply": {
       "supply": []
     },
-    "distribution": {
-      "fee_pool": {
-        "community_pool": []
-      },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": true,
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
+    "bank": {
+      "send_enabled": true
     },
     "vm": {
       "params": {
@@ -425,78 +497,6 @@
         "logs": {},
         "log_index": "0"
       }
-    },
-    "upgrade": {
-      "genesis_version": {
-        "upgrade_info": {
-          "proposal_id": 0,
-          "protocol": {
-            "version": 0,
-            "software": "https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/vmainnet-v1.0.0",
-            "height": 1,
-            "threshold": "0.900000000000000000"
-          }
-        },
-        "success": true
-      }
-    },
-    "mint": {
-      "minter": {
-        "inflation": "0.040000000000000000",
-        "annual_provisions": "0.000000000000000000",
-        "current_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "pdip",
-        "inflation_rate_change": "0.060000000000000000",
-        "inflation_max": "0.100000000000000000",
-        "inflation_min": "0.040000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520",
-        "max_provisions": "350000000000000000000.000000000000000000"
-      }
-    },
-    "slashing": {
-      "params": {
-        "max_evidence_age": "86400000000000",
-        "signed_blocks_window": "34560",
-        "min_signed_per_window": "0.700000000000000000",
-        "downtime_jail_duration": "129600000000000",
-        "slash_fraction_double_sign": "0.010000000000000000",
-        "slash_fraction_downtime": "0.000300000000000000"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "pdip",
-        "amount": "1000"
-      }
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "pdip",
-            "amount": "2000000000000000"
-          }
-        ],
-        "max_deposit_period": "86400000000000"
-      },
-      "voting_params": {
-        "voting_period": "432000000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
-      }
-    },
-    "params": null
+    }
   }
 }
